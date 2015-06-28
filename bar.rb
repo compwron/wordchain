@@ -30,7 +30,7 @@ class WordChain
 	end
 
 	def words_for
-		Dictionary.words.select{|w| almost?(@current, w)}.reject {|i| i == @current }
+		Dictionary.words.select{|w| almost?(@current, w.downcase)}.reject {|i| i == @current }.map(&:downcase).uniq
 	end
 
 	def almost?(a, b)
