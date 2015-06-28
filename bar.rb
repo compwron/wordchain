@@ -49,7 +49,7 @@ class WordChain
 end
 
 if ![2, 3].include?(ARGV.size)
-	puts "Usage: \n 	<first word> <last word> <maximum depth>(optional)\n 	ruby bar.rb word bird 3\n 	ruby bar.rb hint bent 2"
+	puts "Usage: \n 	<first word> <last word> <maximum depth>(optional)\n 	ruby bar.rb word bird 3\n 	ruby bar.rb hint bent 2\n 	ruby bar.rb gnat flat 3"
 	exit
 end
 starter_word = ARGV[0]
